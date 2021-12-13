@@ -6,6 +6,9 @@ enum StarPortType {
   /// Checks lan or wifi
   LAN,
 
+  /// Checks bluetooth low energy port
+  BluetoothLowEnergy,
+
   /// Checks bluetooth port
   Bluetooth,
 

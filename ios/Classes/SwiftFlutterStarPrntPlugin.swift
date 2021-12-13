@@ -44,6 +44,7 @@ public class SwiftFlutterStarPrntPlugin: NSObject, FlutterPlugin {
 //          case 5  :     // All
             default :
                 searchPrinterResult = try SMPort.searchPrinter(target: "ALL:") as? [PortInfo]
+
             }
             if let btPortInfoArray = searchPrinterResult{
                 for printer in btPortInfoArray {
