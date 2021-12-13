@@ -37,7 +37,7 @@ public class SwiftFlutterStarPrntPlugin: NSObject, FlutterPlugin {
                 searchPrinterResult = try SMPort.searchPrinter(target: "TCP:") as? [PortInfo]
             case "Bluetooth"  :     // Bluetooth
                 searchPrinterResult = try SMPort.searchPrinter(target: "BT:")  as? [PortInfo]
-            case "BLE"  :     // Bluetooth Low Energy
+            case "BluetoothLowEnergy"  :     // Bluetooth Low Energy
                 searchPrinterResult = try SMPort.searchPrinter(target: "BLE:") as? [PortInfo]
             case "USB"  :     // USB
                 searchPrinterResult = try SMPort.searchPrinter(target: "USB:") as? [PortInfo]
